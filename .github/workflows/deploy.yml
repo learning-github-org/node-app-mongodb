@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run server
-        run: npm start & npx wait-on http://122.172.82.166
+        run: npm start & npx wait-on http://127.0.0.1:$PORT
       - name: Run tests 
         run: npm test
       - name: Output information
